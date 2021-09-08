@@ -4,13 +4,14 @@ using namespace std;
 
 #include "Livro.h"
 #include "Revista.h"
+#include "CD.h"
 
 int main()
 {
 	Livro *meuLivro;
 	meuLivro = new Livro();
 
-	cout << "\nRevistas" << endl;
+	cout << "\nLivros" << endl;
 	
 		meuLivro->codigo = 1;
 		strcpy(meuLivro->titulo, "The Little Prince");
@@ -27,6 +28,9 @@ int main()
 	char isbn[20];
 	unsigned int ano;
 	unsigned int mes;
+	unsigned int discos;
+	unsigned int duracao;
+	unsigned int faixas;
 
 	codigo = 2;
 	strcpy(titulo, "Moby-Dick (2)");
@@ -49,7 +53,7 @@ int main()
 	
 	cout << "\nRevistas" << endl;
 
-	Revista* minhaRevista;
+	Revista *minhaRevista;
 	minhaRevista = new Revista();
 
 	minhaRevista->codigo = 1;
@@ -59,8 +63,6 @@ int main()
 	cout << "(minhaRevista) Titulo: " << minhaRevista->titulo << endl;
 
 	delete minhaRevista;//Liberar espaço de memória após a consulta
-
-
 
 	codigo = 2;
 	strcpy(titulo, "Nature (2)");
@@ -82,6 +84,38 @@ int main()
 	cout << "(revistaNature) Mes: " << revistaNature->mes << endl;
 
 	delete revistaNature;
+
+	cout << "\nCD" << endl;
+
+	CD *meuCD;
+	meuCD = new CD();
+
+	meuCD->codigo = 1;
+	strcpy(meuCD->titulo, "River");
+
+	cout << "(meuCD) Codigo: " << meuCD->codigo << endl;
+	cout << "(meuCD Titulo: " << meuCD->titulo << endl;
+
+	delete meuCD;
+
+	codigo = 2;
+	strcpy(titulo, "Rainbow (2)");
+	discos = 1;
+	duracao = 1;
+	faixas = 15;
+
+	CD *cdRainbow;
+
+	cdRainbow = new CD(codigo, titulo, discos, duracao, faixas);
+
+	cout << endl;
+	cout << "(cdRainbow) Codigo: " << cdRainbow->codigo << endl;
+	cout << "(cdRainbow) Titulo: " << cdRainbow->titulo << endl;
+	cout << "(cdRainbow) Discos: " << cdRainbow->discos << endl;
+	cout << "(cdRainbow) Duracao: " << cdRainbow->duracao << endl;
+	cout << "(cdRainbow) Faixas: " << cdRainbow->faixas << endl;
+
+
 
 
 	system("PAUSE");
