@@ -5,6 +5,7 @@ using namespace std;
 #include "Livro.h"
 #include "Revista.h"
 #include "CD.h"
+#include "DVD.h"
 
 int main()
 {
@@ -31,6 +32,8 @@ int main()
 	unsigned int discos;
 	unsigned int duracao;
 	unsigned int faixas;
+	unsigned int regiao;
+	char legendas[50];
 
 	codigo = 2;
 	strcpy(titulo, "Moby-Dick (2)");
@@ -115,8 +118,41 @@ int main()
 	cout << "(cdRainbow) Duracao: " << cdRainbow->duracao << endl;
 	cout << "(cdRainbow) Faixas: " << cdRainbow->faixas << endl;
 
+	delete cdRainbow;
 
+	cout << "\nDVD" << endl;
 
+	DVD *meuDVD;
+	meuDVD = new DVD();
+
+	meuDVD->codigo = 1;
+	strcpy(meuDVD->titulo, "Call");
+
+	cout << "(meuDVD) Codigo: " << meuDVD->codigo << endl;
+	cout << "(meuDVD) Titulo: " << meuDVD->titulo << endl;
+
+	delete meuDVD;
+
+	codigo = 2;
+	strcpy(titulo, "Carrossel (2)");
+	discos = 2;
+	duracao = 2;
+	regiao = 1;
+	strcpy(legendas, "Sim");
+
+	DVD *dvdCarrossel;
+
+	dvdCarrossel = new DVD(codigo, titulo, discos, duracao, regiao, legendas);
+
+	cout << endl;
+	cout << "(dvdCarrossel) Codigo: " << dvdCarrossel->codigo << endl;
+	cout << "(dvdCarrossel) Titulo: " << dvdCarrossel->titulo << endl;
+	cout << "(dvdCarrossel) Discos: " << dvdCarrossel->discos << endl;
+	cout << "(dvdCarrossel) Duracao: " << dvdCarrossel->duracao << endl;
+	cout << "(dvdCarrossel) Regiao: " << dvdCarrossel->regiao << endl;
+	cout << "(dvdCarrossel) Legendas: " << dvdCarrossel->legendas << endl;
+
+	delete dvdCarrossel;
 
 	system("PAUSE");
 

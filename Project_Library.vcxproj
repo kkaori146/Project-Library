@@ -142,11 +142,13 @@
   <ItemGroup>
     <ClCompile Include="CD.cpp" />
     <ClCompile Include="ClassesObjetos.cpp" />
+    <ClCompile Include="DVD.cpp" />
     <ClCompile Include="Livro.cpp" />
     <ClCompile Include="Revista.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CD.h" />
+    <ClInclude Include="DVD.h" />
     <ClInclude Include="Livro.h" />
     <ClInclude Include="Revista.h" />
   </ItemGroup>
