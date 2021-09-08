@@ -3,6 +3,8 @@ class Livro
 {
 public:
 	Livro();
+	Livro(unsigned int codigo, char titulo[], char editora[], unsigned int paginas, char isbn[]);
+	~Livro();
 
 	unsigned int codigo;
 	char titulo[100];
