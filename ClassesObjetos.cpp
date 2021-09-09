@@ -80,6 +80,27 @@ int main()
 
 	delete cd;
 
+	codigo = 4;
+	strcpy(titulo, "Primavera");
+	discos = 3;
+	duracao = 3;
+	regiao = 4;
+	strcpy(legendas, "PT, JP, EN");
+
+	DVD *dvd;
+	dvd = new DVD(codigo, titulo, discos, duracao, regiao, legendas);
+
+	cout << endl;
+	cout << "(dvd) Codigo: " << dvd->getCodigo() << endl;
+	cout << "(dvd) Titulo: " << dvd->getTitulo() << endl;
+	cout << "(dvd) Discos: " << dvd->getDiscos() << endl;
+	cout << "(dvd) Duracao: " << dvd->getDuracao() << endl;
+	cout << "(dvd) Regiao: " << dvd->getRegiao() << endl;
+	cout << "(dvd) Legendas: " << dvd->getLegendas() << endl;
+
+	delete dvd;
+
+
 	system("PAUSE");
 
 	return 0;

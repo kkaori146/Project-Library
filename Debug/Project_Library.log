@@ -1,4 +1,4 @@
 ﻿  ClassesObjetos.cpp
-D:\Projetos_Iniciais\Project_Library\ClassesObjetos.cpp(24,15): warning C4101: 'regiao': variável local não referenciada
-D:\Projetos_Iniciais\Project_Library\ClassesObjetos.cpp(25,7): warning C4101: 'legendas': variável local não referenciada
+  DVD.cpp
+  Gerando Código...
   Project_Library.vcxproj -> D:\Projetos_Iniciais\Project_Library\Debug\Project_Library.exe
