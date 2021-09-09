@@ -9,7 +9,7 @@ using namespace std;
 
 int main()
 {
-	cout << "\nLivros" << endl;
+	cout << "\nLibrary" << endl;
 
 	unsigned int codigo;
 	char titulo[100];
@@ -43,8 +43,8 @@ int main()
 	delete livro;
 
 	codigo = 2;
-	strcpy(titulo, "Pets");
-	strcpy(editora, "MM's");
+	strcpy(titulo, "Crazy");
+	strcpy(editora, "MMs");
 	paginas = 15;
 	ano = 2021;
 	mes = 04;
@@ -61,6 +61,24 @@ int main()
 	cout << "(revista) Mes: " << revista->getMes() << endl;
 
 	delete revista;
+
+	codigo = 3;
+	strcpy(titulo, "Twinkle");
+	discos = 2;
+	duracao = 1;
+	faixas = 15;
+	
+	CD *cd;
+	cd = new CD(codigo, titulo, discos, duracao, faixas);
+
+	cout << endl;
+	cout << "(cd) Codigo: " << cd->getCodigo() << endl;
+	cout << "(cd) Titulo: " << cd->getTitulo() << endl;
+	cout << "(cd) Discos: " << cd->getDiscos() << endl;
+	cout << "(cd) Duracao: " << cd->getDuracao() << endl;
+	cout << "(cd) Faixas: " << cd->getFaixas() << endl;
+
+	delete cd;
 
 	system("PAUSE");
 
