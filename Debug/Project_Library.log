@@ -3,9 +3,5 @@ D:\Projetos_Iniciais\Project_Library\ClassesObjetos.cpp(23,15): warning C4101: '
 D:\Projetos_Iniciais\Project_Library\ClassesObjetos.cpp(24,15): warning C4101: 'regiao': variável local não referenciada
 D:\Projetos_Iniciais\Project_Library\ClassesObjetos.cpp(22,15): warning C4101: 'duracao': variável local não referenciada
 D:\Projetos_Iniciais\Project_Library\ClassesObjetos.cpp(25,7): warning C4101: 'legendas': variável local não referenciada
-D:\Projetos_Iniciais\Project_Library\ClassesObjetos.cpp(19,15): warning C4101: 'ano': variável local não referenciada
 D:\Projetos_Iniciais\Project_Library\ClassesObjetos.cpp(21,15): warning C4101: 'discos': variável local não referenciada
-D:\Projetos_Iniciais\Project_Library\ClassesObjetos.cpp(20,15): warning C4101: 'mes': variável local não referenciada
-  Livro.cpp
-  Gerando Código...
   Project_Library.vcxproj -> D:\Projetos_Iniciais\Project_Library\Debug\Project_Library.exe
