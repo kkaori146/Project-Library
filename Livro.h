@@ -6,10 +6,19 @@ public:
 	Livro(unsigned int codigo, char titulo[], char editora[], unsigned int paginas, char isbn[]);
 	~Livro();
 
+	void setCodigo(unsigned int codigo);
 	unsigned int getCodigo();
+
+	void setTitulo(char titulo[]);
 	char *getTitulo();
+
+	void setEditora(char editora[]);
 	char *getEditora();
+
+	void setPaginas(unsigned int paginas);
 	unsigned int getPaginas();
+
+	void setIsbn(char isbn[]);
 	char *getIsbn();
 
 private:
