@@ -44,23 +44,25 @@ int main()
 
 	codigo = 2;
 	strcpy(titulo, "Crazy");
-	strcpy(editora, "MMs");
+	strcpy(editora, "LunaLua");
 	paginas = 15;
 	ano = 2021;
 	mes = 04;
+
 
 	Revista *revista;
 	revista = new Revista(codigo, titulo, editora, paginas, ano, mes);
 
 	cout << endl;
-	cout << "(revista) Codigo: " << revista->getCodigo() << endl;
-	cout << "(revista) Titulo: " << revista->getTitulo() << endl;
-	cout << "(revista) Editora: " << revista->getEditora() << endl;
+	cout << "(revista) Codigo: "<< revista->getCodigo() << endl;
+	cout << "(revista) Titulo: "<< revista->getTitulo() << endl;
+	cout << "(revista) Editora: "<< revista->getEditora() << endl;
 	cout << "(revista) Paginas: " << revista->getPaginas() << endl;
 	cout << "(revista) Ano: " << revista->getAno() << endl;
 	cout << "(revista) Mes: " << revista->getMes() << endl;
 
 	delete revista;
+
 
 	codigo = 3;
 	strcpy(titulo, "Twinkle");

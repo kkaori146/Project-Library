@@ -32,7 +32,7 @@ unsigned int Revista::getCodigo()
 	return this->codigo;
 }
 
-void Revista::setTitulo(char Titulo[])
+void Revista::setTitulo(char titulo[])
 {
 	strcpy(this->titulo, titulo);
 }
