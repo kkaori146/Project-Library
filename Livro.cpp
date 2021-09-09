@@ -21,3 +21,24 @@ Livro::~Livro()
 {
 
 }
+
+unsigned int Livro::getCodigo()
+{
+	return this->codigo;
+}
+char *Livro::getTitulo()
+{
+	return this->titulo;
+}
+char *Livro::getEditora()
+{
+	return this->editora;
+}
+unsigned int Livro::getPaginas()
+{
+	return this->paginas;
+}
+char *Livro::getIsbn()
+{
+	return this->isbn;
+}
